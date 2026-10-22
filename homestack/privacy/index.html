@@ -11,7 +11,7 @@
 <main>
   <p class="eyebrow"><a href="../../">Sundowner Labs</a> · Homestack</p>
   <h1>Homestack Privacy Policy</h1>
-  <p class="meta">Effective 4 October 2026</p>
+  <p class="meta">Effective 23 October 2026</p>
 
   <p>Homestack is a shared family calendar made by Sundowner Labs, an Australian business. This policy explains what
   information Homestack collects, why, who can see it, and the choices you have. We handle personal information in line
@@ -24,8 +24,9 @@
 
   <h3>Your account</h3>
   <ul>
-    <li><strong>Adults:</strong> your name, email address and password. Passwords are stored only in hashed form by our
-    authentication provider; we can't see them.</li>
+    <li><strong>Adults and teenagers:</strong> your name, email address and password. Passwords are stored only in hashed
+    form by our authentication provider; we can't see them. If you sign in with Google, Apple or Microsoft instead, we
+    receive your name and email address from them and store no password.</li>
     <li><strong>Children's and calendar-only members:</strong> a household admin can add family members who don't have an
     email address. For these we store a name and, if the admin sets one, a PIN (stored in hashed form). Calendar-only
     members (for example a baby or a pet) can't sign in at all.</li>
@@ -36,9 +37,10 @@
   <h3>What your household adds</h3>
   <ul>
     <li>Calendar events, tasks, rewards and points, shared lists, and a bin-night schedule.</li>
-    <li>Invitations, which include the email address of the person being invited.</li>
-    <li>Photos you choose as a background picture. These are stored privately for your household and are only used as
-    that background.</li>
+    <li>Invitations, which include the email address of the person being invited. The invite code itself is stored only
+    in hashed form.</li>
+    <li>Photos you choose as a background or screensaver picture. These are stored privately for your household and are
+    only used for that.</li>
   </ul>
 
   <h3>Connected apps (optional)</h3>
@@ -47,6 +49,9 @@
   items you have chosen to share from Daystack, and displays them on your family's calendar. Information only flows from
   Daystack to Homestack, never the other way. You can disconnect at any time in Settings, which deletes the key and the
   shared items from Homestack.</p>
+  <p>You can also link a Google, Outlook or iCloud calendar by its private calendar address. The address is stored on
+  our servers and never sent back to any device; Homestack uses it only to fetch that calendar's events and show them on
+  your family's calendar. Disconnecting deletes the address and the events it brought in.</p>
 
   <h3>Location</h3>
   <p>If you allow it, Homestack uses your device's <strong>approximate</strong> location (rounded to about 1 km) to show
@@ -57,7 +62,8 @@
   <h3>Stored only on your device</h3>
   <p>Display preferences (layout, background, state for public holidays and similar settings) are kept on the device
   itself. To let family members switch who is using a shared tablet, the device also remembers which adult email
-  addresses have signed in on it. Passwords are never stored on the device.</p>
+  addresses have signed in on it. Passwords are never stored on the device. Reminders for events, bin night and tasks
+  are scheduled on the phone itself; nothing about them is sent anywhere.</p>
 
   <h2>How we use it</h2>
   <p>Only to provide Homestack's features: showing and syncing your household's calendar, tasks, rewards and lists
@@ -70,8 +76,9 @@
     the members of your household. Household admins can add, change and remove members.</li>
     <li><strong>Service providers</strong> who help us run Homestack, only as needed to provide it:
       <ul>
-        <li><strong>Supabase</strong> — our database, sign-in and file storage provider. Their servers may be located
-        outside Australia.</li>
+        <li><strong>Supabase</strong> — our database, sign-in and file storage provider. Homestack's data is hosted in
+        Sydney, Australia.</li>
+        <li><strong>Google, Apple and Microsoft</strong> — only if you choose to sign in with them.</li>
         <li><strong>Open-Meteo</strong> — receives an approximate location to return a weather forecast.</li>
         <li><strong>Google Play</strong> — distributes the app.</li>
       </ul>
@@ -81,7 +88,9 @@
   <p>We do not sell personal information, and we do not use it for advertising.</p>
 
   <h2>Children</h2>
-  <p>Homestack is designed to be set up and managed by adults for their family. Children's accounts can only be created
+  <p>You must be 13 or older to create your own Homestack account, and teenagers join a household only when invited by
+  its admin. Homestack is designed to be set up and managed by adults for their family. Accounts for children under 13
+  can only be created
   by a household admin (a parent or guardian), and we collect as little as possible about them: a name, and optionally a
   PIN, a birthdate, a colour and a picture. If you believe a child's information has been added without a parent's or
   guardian's consent, contact us and we will delete it.</p>
@@ -94,10 +103,13 @@
 
   <h2>Keeping and deleting your information</h2>
   <p>We keep your information while your account is active. A household admin can remove a member from the household in
-  the app. To delete your account, a family member's account, or your whole household and everything in it, email us at
-  <a href="mailto:privacy@sundownerlabs.com.au">privacy@sundownerlabs.com.au</a> from the email address on the account.
-  We will confirm and complete the deletion within 30 days. Removing the app from a device deletes the settings stored on
-  that device.</p>
+  the app. You can delete your own account in the mobile app under <strong>Security → Delete account</strong>; it's
+  deleted straight away. If you're your household's last admin, this also deletes the household, its photos and its
+  children's accounts. Failed PIN attempts are recorded only to lock out repeated guessing.</p>
+  <p>To delete a family member's account or your whole household without the app, email us at
+  <a href="mailto:privacy@sundownerlabs.com.au">privacy@sundownerlabs.com.au</a> from the email address on the account,
+  or see <a href="../delete-account/">Delete your Homestack account</a>. We will confirm and complete the deletion within
+  30 days. Removing the app from a device deletes the settings stored on that device.</p>
 
   <h2>Your rights</h2>
   <p>You can ask to access or correct the personal information we hold about you by emailing
