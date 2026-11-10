@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homestack</title>
+  <meta name="description" content="Homestack, the family calendar app by Sundowner Labs.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow"><a href="../">Sundowner Labs</a> · Homestack</p>
+  <h1 id="title">You're all set</h1>
+  <p id="message">Your email address is confirmed. Go back to the Homestack app and sign in.</p>
+
+  <p>
+    <a href="privacy/">Privacy policy</a> ·
+    <a href="delete-account/">Delete your account</a>
+  </p>
+</main>
+<script>
+  // Sign-up confirmation links land here. Supabase puts any error in the
+  // address after "#", e.g. #error_code=otp_expired. Text only, never HTML.
+  (function () {
+    var params = new URLSearchParams(window.location.hash.slice(1) || window.location.search.slice(1));
+    var code = params.get('error_code');
+    if (!code && !params.get('error')) return;
+    document.getElementById('title').textContent = "That link didn't work";
+    document.getElementById('message').textContent = code === 'otp_expired'
+      ? 'The confirmation link has expired or was already used. Open the Homestack app and sign up again with the same email address to get a new link. If you already confirmed, just sign in.'
+      : 'We couldn’t confirm your email address. Open the Homestack app and try again, or email privacy@sundownerlabs.com.au for help.';
+  })();
+</script>
+</body>
+</html>
